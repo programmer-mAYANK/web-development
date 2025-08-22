@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <!--<input type="hidden" name="user_id" value="1234" /> -->
+        <label for="Phone">Phone Number</label>
+        <input 
+        type="tel"
+        id="phone"
+        name="phone"
+        pattern="[0-9]{10}"
+        placeholder="1234567890"
+        />
+        <br /><br />
+        <label for="browser">Choose a browser:</label>
+        <input type="text" id="browser" list="brwsr"/> <br /><br />
+        <datalist id="brwsr">
+           <option>Chrome</option>
+           <option>Edge</option>
+           <option>Safari</option>
+           <option>Opera</option>
+           <option>Brave</option>
+        </datalist>
+
+        <input type="submit" />
+        <button>Click Me</button>
+    </form>
+</body>
+</html>

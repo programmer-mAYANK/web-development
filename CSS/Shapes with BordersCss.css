@@ -1,0 +1,42 @@
+body{
+    background-color: #f4c95d;
+    font-family: Arial, sans-serif;
+}
+title{
+    text-align: center;
+    color: red;
+    border-style: outset;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 5px 20px;
+}
+.shape{
+    width: 200px;
+    height: 80px;
+    margin: 20px;
+    line-height: 80px;
+    text-align: center;
+    font-weight: bold;
+    background-color: transparent;
+}
+.bullet{
+    border: 5px solid #50cfc3;
+    border-radius: 50px 0 0 50px;
+}
+.round-rectangle{
+    border: 5px solid gold;
+    border-radius: 20px;
+}
+.hemisphere{
+    border: 5px solid green;
+    border-radius: 100px 100px 0 0;
+}
+.leaf{
+    border: 5px solid brown;
+    border-radius: 100px 100px 0 0;
+}
+.leaf{
+    border: 5px solid green;
+    border-radius: 100px 0 0 100px;
+    transform: rotate(90deg);
+}

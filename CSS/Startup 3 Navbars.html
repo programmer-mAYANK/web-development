@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Startup 3 Navbars</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 50px;
+    }
+    .logo {
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: white;
+    }
+    .nav-links {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+    }
+    .nav-links a {
+        text-decoration: none;
+        font-size: 0.95rem;
+        color: white;
+    }
+    .btn {
+        padding: 8px 18px;
+        border-radius: 25px;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+    }
+    .btn-primary {
+        background: #00d2d3;
+        color: white;
+    }
+    .btn-outline {
+        border: 1px solid white;
+        background: transparent;
+        color: white;
+    }
+   
+    .white {
+        background: white;
+    }
+    .white .logo,
+    .white .nav-links a {
+        color: #2b2b52;
+    }
+    .white .btn-outline {
+        border: 1px solid #2b2b52;
+        color: #2b2b52;
+    }
+    .white .btn-primary {
+        background: #4b4bff;
+    }
+
+    .purple {
+        background: #3a0ca3;
+    }
+   
+    .footer-nav {
+        background: #3a0ca3;
+        padding: 20px 50px;
+    }
+    .footer-nav .nav-links a {
+        color: white;
+    }
+</style>
+</head>
+<body>
+
+
+<div class="navbar purple">
+    <div class="logo">Startup 1</div>
+    <div class="nav-links">
+        <a href="#">Tour</a>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Blog</a>
+        <i class="fab fa-dribbble"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-behance"></i>
+    </div>
+    <button class="btn btn-primary">Buy on App Store</button>
+</div>
+
+<div class="navbar white">
+    <div class="logo">Startup 2</div>
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Blog</a>
+        <a href="#">Shop</a>
+        <i class="fas fa-search"></i>
+    </div>
+    <div>
+        <button class="btn btn-outline">Sign In</button>
+        <button class="btn btn-primary">Sign Up</button>
+    </div>
+</div>
+
+<div class="navbar purple">
+    <div class="logo">Startup 3</div>
+    <div class="nav-links">
+        <a href="#">Get The App</a>
+        <a href="#">Features</a>
+        <a href="#">About</a>
+        <a href="#">F.A.Q.</a>
+    </div>
+    <div>
+        <button class="btn btn-outline">Sign In</button>
+        <button class="btn btn-primary">Sign Up</button>
+    </div>
+</div>
+
+<div class="navbar white">
+    <div class="logo">Startup 4</div>
+    <div class="nav-links">
+        <a href="#">Tour</a>
+        <a href="#">Prices</a>
+        <a href="#">About</a>
+        <a href="#">F.A.Q.</a>
+        <a href="#">Support</a>
+    </div>
+    <div>
+        <button class="btn btn-outline">Login</button>
+        <button class="btn btn-primary">Sign Up</button>
+    </div>
+</div>
+
+<div class="footer-nav">
+    <div class="navbar" style="padding:0;">
+        <div class="logo">Startup 5</div>
+        <div class="nav-links">
+            <a href="#">Tour</a>
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Blog</a>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

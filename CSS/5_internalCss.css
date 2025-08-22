@@ -1,0 +1,28 @@
+body{
+    background-color:aqua;
+}
+h1{
+    color: blue;
+}
+.one{
+    color:blueviolet;
+    background-color: lightgreen;
+}
+.two{
+    color: white;
+    background-color: lightcoral;
+}
+.three{
+    color:black;
+    background-color: pink    
+}
+h2.one{
+    color:yellowgreen
+}
+h2.two{
+    color: blue;
+    text-align: right;
+}
+h3.three{
+    color:blue
+}

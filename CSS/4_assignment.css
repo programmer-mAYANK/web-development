@@ -1,0 +1,38 @@
+body{
+    background-color: #070202bd;
+    color: rgb(179, 6, 194);
+    font-family:monospace;
+    text-align: center;
+}
+h1{
+    margin: 20px;
+    padding: 20px;
+    font-size: 2em;
+}
+.none{
+    border: none;
+}
+.dotted{
+    border: 5px dotted black;
+}
+.dashed{
+    border: 5px dashed black;
+}
+.solid{
+    border: 5px solid black;
+}
+.double{
+    border: 5px double black;
+}
+.groove{
+    border: 5px groove black;
+}
+.ridge{
+    border: 5px ridge black;
+}
+.inset{
+    border: 5px inset black;
+}
+.outset{
+    border : 5px outset black;
+}

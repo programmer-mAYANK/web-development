@@ -1,0 +1,34 @@
+h1{
+    text-align: center;
+    text-decoration: underline;
+    background-color: lightslategrey;
+    color:white;
+    font-style: italic;
+}
+#heading1 {
+    color:darkmagenta;
+    font-style: italic;
+}
+#heading2 {
+    color: darkolivegreen;
+}
+#para1 {
+    font-family: cursive;
+}
+.para2{
+    font-weight: bold;
+    font-size: 18px;
+} 
+.heading3{
+    text-align: right;
+    text-decoration: underline;
+}
+#para3 {
+    color: darkmagenta;
+}
+#para4 {
+    color: green;
+}
+body{
+    background-color: lightblue(167, 214, 243);
+}

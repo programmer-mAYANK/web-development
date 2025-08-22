@@ -1,0 +1,15 @@
+.mainCont {
+    height: 200px;
+    width: 200px;
+    border: 2px solid;
+    margin: 80px;
+    perspective: 200px;
+}
+.transCont {
+    height: 200px;
+    width: 200px;
+    background-color: seagreen;
+   /* transform: translateX(20px); */
+   /*transform: translate3d(80px, -90px, -60px); */
+   transform: rotate3d(0,0,0,);
+}

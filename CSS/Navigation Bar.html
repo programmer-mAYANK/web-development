@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navigation UI</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #eee;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    color: #fff;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    cursor: pointer;
+}
+
+.navbar .logo {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn-buy { background: #a7f3d0; color: #000; }
+.btn-discover { background: #ef4444; color: #fff; }
+.btn-signin { background: #3b82f6; color: #fff; }
+
+.search-cart i {
+    margin-left: 15px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Navigation</h2>
+
+   
+    <div class="navbar" style="background:#1f2937;">
+        <div class="logo"><i class="fa-regular fa-circle-dot"></i> Miri UI</div>
+        <ul>
+            <li>Home</li>
+            <li>Templates</li>
+            <li>Pages</li>
+            <li>Elements</li>
+        </ul>
+        <div>
+            <button class="btn btn-buy">Buy Now</button>
+            <button class="btn btn-discover">Discover</button>
+        </div>
+    </div>
+
+    <br>
+
+   
+    <div class="navbar" style="background:#3b82f6;">
+        <div class="logo"><i class="fa-regular fa-circle-dot"></i> Miri UI</div>
+        <ul>
+            <li>Home</li>
+            <li>Templates</li>
+            <li>Pages</li>
+        </ul>
+        <div>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+    </div>
+
+    <br>
+
+
+    <div class="navbar" style="background:#34d399;">
+        <div class="logo"><i class="fa-regular fa-circle-dot"></i> Miri UI</div>
+        <ul>
+            <li>Home</li>
+            <li>Templates <i class="fa-solid fa-caret-down"></i></li>
+            <li>Pages <i class="fa-solid fa-caret-down"></i></li>
+        </ul>
+        <div class="search-cart">
+            <button class="btn btn-signin"><i class="fa-solid fa-user"></i> Signin</button>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </div>
+
+    <br>
+
+    
+    <div class="navbar" style="background:#ef4444;">
+        <div class="logo"><i class="fa-regular fa-circle-dot"></i> Miri UI</div>
+        <div>
+            <i class="fab fa-instagram"></i> Instagram
+            <i class="fab fa-twitter" style="margin-left:15px;"></i> Twitter
+            <i class="fab fa-facebook" style="margin-left:15px;"></i> Facebook
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

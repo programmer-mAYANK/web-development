@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Novell Services Login</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background-color: #b3b6a5;
+    }
+
+    .form-container {
+      background-color: rgb(238, 242, 245);
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type="text"],input[type="password"],
+    select {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+
+    .buttons {
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    .buttons input {
+      padding: 6px 12px;
+      margin: 0 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Novell Services Login</h2>
+    <form>
+      <label>Username:</label>
+      <input type="text" name="username">
+
+      <label>Password:</label>
+      <input type="password" name="password">
+
+      <label>City of Employment:</label>
+      <input type="text" name="city">
+
+      <label>Web server:</label>
+      <select name="server">
+        <option>-- Choose a server --</option>
+        <option>Server 1</option>
+        <option>Server 2</option>
+        <option>Server 3</option>
+      </select>
+
+      <label>Please specify your role:</label>
+      <input type="radio" name="role" value="admin"> Admin<br>
+      <input type="radio" name="role" value="engineer"> Engineer<br>
+      <input type="radio" name="role" value="manager"> Manager<br>
+      <input type="radio" name="role" value="guest"> Guest<br>
+
+      <label>Single Sign-on to the following:</label>
+      <input type="checkbox" name="sso" value="mail"> Mail<br>
+      <input type="checkbox" name="sso" value="payroll"> Payroll<br>
+      <input type="checkbox" name="sso" value="selfservice"> Self-service<br>
+
+      <div class="buttons">
+        <input type="submit" value="Login">
+        <input type="reset" value="Reset">
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

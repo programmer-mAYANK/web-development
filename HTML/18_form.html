@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment Form</title>
+    <style>
+        body {
+            font-family: serif;
+        }
+        .container {
+            width:fit-content;
+            margin:auto;
+            margin-top: 50px;
+        }
+        label{
+            display:inline-block;
+            width: 180px;
+            margin-bottom: 10px;
+        }
+        input[type="text"],input[type="password"],input[type="tel"], select {
+            width: 250px;;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .radio-group{
+            margin-left: 180px;
+            margin-bottom: 10px;
+        }
+        button, input[type="submit"]{
+            padding: 5px 15px;
+            margin: 10px 5px 10px 0;
+        }
+        hr{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <label>UserName:</label>
+            <input type="text"><br>
+
+            <label>Password:</label>
+            <input type="text"><br>
+
+            <label>City of Employment:</label>
+            <input type="text"><br>
+
+            <label>Please Specify Your role:</label><br>
+            <div class="radio-group">
+                <input type="radio"  name="role">Admin<br>
+                <input type="radio" name="role">Engineer<br>
+                <input type="radio" name="role">Manager<br>
+                <input type="radio" name="role">Guest<br>
+            </div>
+            <button type="submit">Login</button>
+            <button type="reset">Reset</button>
+               <hr>
+               <label>Mobile Number...</label>
+               <input type="tel" placeholder="Enter your mobile number"><br>
+               <label>Choose a Browser...</label>
+               <input type="text"><br><br>
+               <input type="submit" value="Submit">  
+        </form>
+    </div>
+</body>
+</html>

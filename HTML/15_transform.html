@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conatiner {
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            margin: 50px;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            /*transform: translate(50px, 50px); */
+            transform: perspective(200px) translateZ(50px);
+         }
+    </style>
+</head>
+<body>
+   <h2>Transform in CSS</h2> 
+   <div class="conatiner">
+    <div class="box"></div>
+   </div>
+</body>
+</html>
+<!--
+transform:
+2d - x,y axis
+3d - x,y,z axis
+
+x - width
+y - height
+
+
+origin(0,0)
+
+2d - px,rem,%
+x + -> shift to right
+x - -> shift to left
+
+y + -> shift to bottom
+y - -> shift to top
+
+transform
+translated3d(x,y,z)
+translate(x,y)
+
+rotate(x,y,45deg)
+rotate3d(x,y,z,30deg)
+
+skewX , skewY
+scale() -> size increase/decrease
+-->
