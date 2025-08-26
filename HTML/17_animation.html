@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loading{
+            height: 70px;
+            width: 70px;
+            border: 5px solid rgb(190, 181, 181);
+            border-left-color: rgb(116, 17, 208);
+            animation: spin 1s infinite linear;
+            border-radius: 50%;
+        }
+        @keyframes spin {
+         0% {
+            transform: rotate(0deg);
+         }
+         100% {
+            transform: rotate(360deg);
+         }
+        }
+        .bounceBall{
+            height: 60px;
+            width: 60px;
+            background-color: mediumblue;
+            box-shadow: 0px 4px 5px grey;
+            border-radius: 50%;
+            animation: ball 2s linear infinite;
+        }
+        @keyframes ball {
+            0%{
+                transform: translateY(0px);
+            }
+            100%{
+                transform: translateY(300px);
+            }
+            100%{
+                transform: translateY();
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading"></div>
+    <div class="bounceBall"></div>
+</body>
+</html>
