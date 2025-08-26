@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 100px;
+            width: 100px;
+            background-color: tomato;
+            position: relative;
+            animation: slide 2s infinite linear;
+            animation-delay: 5ms;
+            animation-direction: alternate;
+        }
+        @keyframes slide {
+          0% {
+            left: 0;
+            background-color: tomato;
+          }
+          100% {
+             left: 600px;
+             background-color: mediumseagreen;
+          }  
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>
