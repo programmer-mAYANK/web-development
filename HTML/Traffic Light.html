@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Light</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            background: #f5f5f5;
+            margin: 0;
+        }
+
+        .traffic-light{
+            width: 100px;
+            height: 260px;
+            background: #2f2f44;
+            border-radius: 20px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0, 4);
+        }
+
+        .light{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: gray;
+            box-shadow: inset -4px -4px 10px rgba(0,0,0,0,5), inset 4px 4px 10px rgba(255, 255, 255, 0.2);
+        }
+        .red{
+            background: red;
+            box-shadow: 0 0 25px red, inset -4px -4px 12px rgba(0, 0, 0, 0.7 ), inset -4px -4px 12px rgba(255, 255, 255, 0.2);
+
+        }
+        .yellow{
+            background: yellow;
+            box-shadow: 0 0 25px yellow, inset -4px -4px 12px rgba(0, 0, 0, 0.7 ), inset -4px -4px 12px rgba(0, 0, 0, 0.7 ), inset 4px 4px 12px rgba(255, 255, 255, 0.2); 
+        }
+        .green{
+            background: limegreen;
+            box-shadow: 0 0 25px limegreen, inset -4px -4px 12px rgba(0, 0, 0, 0.7 ), inset 4px 4px 12px rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+     <div class="traffic-light">
+        <div class="light red"></div>
+        <div class="light yellow"></div>
+        <div class="light green"></div>
+     </div>
+</body>
+</html>
