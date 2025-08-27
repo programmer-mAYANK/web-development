@@ -10,7 +10,7 @@
             justify-content: flex-start;
             align-items: center;
             height: 100vh;
-            background: #f5f5f5;
+            background: #0c0e03;
             margin: 0;
         }
 
@@ -24,36 +24,54 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0, 4);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         }
-
-        .light{
+        .light {
             width: 70px;
             height: 70px;
+            background: #111;
             border-radius: 50%;
-            background: gray;
-            box-shadow: inset -4px -4px 10px rgba(0,0,0,0,5), inset 4px 4px 10px rgba(255, 255, 255, 0.2);
+            margin: auto;
+            opacity: 0.3;
+            box-shadow: 0 0 10px #000;
+            transition: opacity 0.5s, box-shadow 0.5s;
         }
-        .red{
+        .red.active {
             background: red;
-            box-shadow: 0 0 25px red, inset -4px -4px 12px rgba(0, 0, 0, 0.7 ), inset -4px -4px 12px rgba(255, 255, 255, 0.2);
-
+            opacity: 1;
+            box-shadow: 0 0 20px red;
         }
-        .yellow{
+        .yellow.active { 
             background: yellow;
-            box-shadow: 0 0 25px yellow, inset -4px -4px 12px rgba(0, 0, 0, 0.7 ), inset -4px -4px 12px rgba(0, 0, 0, 0.7 ), inset 4px 4px 12px rgba(255, 255, 255, 0.2); 
+            opacity: 1;
+            box-shadow: 0 0 20px yellow;
         }
-        .green{
-            background: limegreen;
-            box-shadow: 0 0 25px limegreen, inset -4px -4px 12px rgba(0, 0, 0, 0.7 ), inset 4px 4px 12px rgba(255, 255, 255, 0.2);
+        .green.active {
+            background: lime;
+            opacity: 1;
+            box-shadow: 0 0 20px lime;
         }
     </style>
 </head>
 <body>
-     <div class="traffic-light">
+    <div class="traffic-light">
         <div class="light red"></div>
         <div class="light yellow"></div>
         <div class="light green"></div>
-     </div>
+    </div>
+
+    <script>
+        const lights= document.querySelectorAll(".light");
+        let index = 0;
+
+        function changeLight() {
+            lights.forEach(light => light.classList.remove("active"));
+
+            lights[index].classList.add("active");
+            index = (index + 1) % lights.length;
+        }
+        changeLight();
+        setInterval(changeLight, 2000);
+    </script>
 </body>
 </html>
