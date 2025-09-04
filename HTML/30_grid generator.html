@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Grid Webpage</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "sidebar main"
+        "sidebar section1"
+        "sidebar section2"
+        "sidebar section3"
+        "sidebar section4";
+      grid-template-columns: 250px 1fr;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    header {
+      grid-area: header;
+      background: black;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      background: orangered;
+      color: white;
+      padding: 20px;
+    }
+
+    .main {
+      grid-area: main;
+      background: rgb(3, 3, 80);
+      color: white;
+      text-align: center;
+      padding: 40px;
+      font-size: 18px;
+    }
+
+    .section1 {
+      grid-area: section1;
+      background: cyan;
+      text-align: center;
+      padding: 30px;
+      font-weight: bold;
+    }
+
+    .section2 {
+      grid-area: section2;
+      background: teal;
+      text-align: center;
+      padding: 30px;
+      font-weight: bold;
+      
+    }
+    
+
+    .section3 {
+      grid-area: section3;
+      background: green;
+      text-align: center;
+      padding: 30px;
+      font-weight: bold;
+    }
+
+    .section4 {
+      grid-area: section4;
+      background: mediumseagreen;
+      text-align: center;
+      padding: 30px;
+      font-weight: bold;
+    }
+
+    ul{
+        margin-top: 50px;
+    }
+    h3{
+        padding-top: 60px;
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        grid-template-areas:
+          "header"
+          "sidebar"
+          "main"
+          "section1"
+          "section2"
+          "section3"
+          "section4";
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>My Website Header</header>
+
+    <aside class="sidebar">
+      <h3>Sidebar Menu</h3>
+      <ul>
+        <li>- Home</li>
+        <li>- About</li>
+        <li>- Services</li>
+        <li>- Contact</li>
+      </ul>
+    </aside>
+
+    <div class="main">
+      <h2>Main Content Area</h2>
+      <p>Welcome to my website! This is the main content section.</p>
+    </div>
+
+    <div class="section1">Section 1: Latest News</div>
+    <div class="section2">Section 2: Featured Products</div>
+    <div class="section3">Section 3: Testimonials</div>
+    <div class="section4">Section 4: Gallery</div>
+  </div>
+</body>
+</html>
