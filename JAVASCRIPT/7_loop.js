@@ -31,8 +31,8 @@ console.log(programming_language)
 
 // Given array: [10,23,6,25,12,80,8,37,40,65]
 // output will be: [10,6,12,80,8,40]
-let arr = [10,23,6,25,12,80,8,37,40,65]
-let evenNum = []
+let Arr = [10,23,6,25,12,80,8,37,40,65]
+let evenum = []
 
 for(let i = 0; i< arr.length; i++){
     if(arr[i] % 2 == 0) {
