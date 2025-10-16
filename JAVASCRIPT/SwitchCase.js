@@ -5,8 +5,8 @@ switch (fruit) {
         break;
         case "orange":
         console.log("you like orange")
-        case "cheery":
-        console.log("you like cheery")
+        case "cherry":
+        console.log("you like cherry")
         break;
 
     default:
